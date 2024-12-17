@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/m31-web/static/css/main.242b559c.css",
+    "main.js": "/m31-web/static/js/main.abdfa498.js",
+    "static/js/453.a5709a78.chunk.js": "/m31-web/static/js/453.a5709a78.chunk.js",
+    "static/media/landingpage2.mp4": "/m31-web/static/media/landingpage2.ddc5a2e0f773c293ff06.mp4",
+    "static/media/headshot_bowang.png": "/m31-web/static/media/headshot_bowang.4e869b62d1a8e0fb97bc.png",
+    "static/media/career_background2.png": "/m31-web/static/media/career_background2.ddc294a8aac94ed2676e.png",
+    "static/media/Inter-VariableFont_opsz,wght.ttf": "/m31-web/static/media/Inter-VariableFont_opsz,wght.e05c5f3d1fa6a3893d84.ttf",
+    "static/media/footer.jpg": "/m31-web/static/media/footer.dd0932207584b2f9b194.jpg",
+    "static/media/medsam.webp": "/m31-web/static/media/medsam.f1efa1f0c14665e0e008.webp",
+    "static/media/segmentation_model.webp": "/m31-web/static/media/segmentation_model.5dcb80c8b866dd2e4879.webp",
+    "static/media/m31logolight.png": "/m31-web/static/media/m31logolight.132fb2b582415679198d.png",
+    "static/media/jun_ma.jpeg": "/m31-web/static/media/jun_ma.8cde8187322f4c1bf24d.jpeg",
+    "static/media/41592_2024_2233_Fig1_HTML.webp": "/m31-web/static/media/41592_2024_2233_Fig1_HTML.6cbad8e0ff75c42bb08d.webp",
+    "static/media/twitter_logo.png": "/m31-web/static/media/twitter_logo.74c283cff25dcb71f278.png",
+    "static/media/google_scholar_logo.png": "/m31-web/static/media/google_scholar_logo.6ef170f60931165b7328.png",
+    "static/media/research.png": "/m31-web/static/media/research.f11a0e29ef44d7f311d6.png",
+    "static/media/clinics.png": "/m31-web/static/media/clinics.6dfa87b21dd5fa5b6768.png",
+    "static/media/imaging.png": "/m31-web/static/media/imaging.d3ae18ec2a84a06811ad.png",
+    "static/media/linkedin_logo.png": "/m31-web/static/media/linkedin_logo.68ac41e1459436bfd38f.png",
+    "index.html": "/m31-web/index.html",
+    "main.242b559c.css.map": "/m31-web/static/css/main.242b559c.css.map",
+    "main.abdfa498.js.map": "/m31-web/static/js/main.abdfa498.js.map",
+    "453.a5709a78.chunk.js.map": "/m31-web/static/js/453.a5709a78.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.242b559c.css",
+    "static/js/main.abdfa498.js"
+  ]
+}
