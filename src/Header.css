@@ -1,0 +1,73 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #282c34; /* Background color to make the header stand out */
+    color: white; /* Text color */
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Position it at the very top */
+    left: 0; /* Align it to the left edge */
+    right: 0; /* Align it to the right edge */
+    z-index: 1000; /* Ensures the header stays on top of other elements */
+    height: 10vh; /* 10% of viewport height */
+  }
+
+.header.scrolled {
+  background-color: white;
+  color: black;
+}
+  
+.logo img {
+  max-width: 90px; /* Adjust logo size */
+}
+
+.contact {
+  /* display: flex; */
+  justify-content: center;
+  padding-right: 30px;
+  font-size: 25px;
+}
+
+  
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+/* Center items within the navbar */
+.nav-links {
+  display: flex;
+  gap: 50px; /* Adjust spacing between links */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+  
+.nav-links li {
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header.scrolled .nav-links li {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header.scrolled .nav-links a {
+    color: black; /* Black link color when scrolled */
+}
+  
+.nav-links a:hover {
+    color: #007BFF; /* Change link color on hover */
+    transition: color 0.3s;
+}

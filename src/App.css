@@ -1,38 +1,526 @@
-.App {
-  text-align: center;
+.landing {
+  position: relative;
+  width: 100vw; /*Full viewport width */
+  height: 100vh; /*Full viewport height */
+  overflow: hidden; /* Ensures no scrollbars if the video exceeds bounds */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the video */
+  width: 100%; /* Full width */
+  height: 100%; /*Full height*/
+  object-fit: cover; /* Ensures the video covers the entire container */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navigation bar styles */
+.nav-bar-wrapper {
+  position: absolute;
+  bottom: 10vh; /* Position at the bottom left */
+  left: 1vw;
+  z-index: 10;
+  /* padding: 1vw 2vw; Add spacing inside */
+  border-radius: 0; /* Optional: Rounded corners */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing-text {
+  position: absolute;
+  left: 4vw;
+  top: 10vh;
+  width: 100%;
+  height: 600px;
+  z-index: 20;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-text img {
+  width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing-text h1 {
+  font-size: 80px;
+  text-shadow: 7px 7px  grey;
+}
+.landing-text p {
+  position: absolute;
+  right: 6vw;
+  top: 80%;
+  font-size: 32px;
+}
+
+
+.bold-ai {
+  font-weight: bold; /* Make AI bold */
+}
+
+
+
+/* Navigation menu (horizontal layout for large screens) */
+.nav-bar-menu ul {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  list-style: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  margin: 0 3vw; /* Space between links */
+  transition: color 0.3s, border-bottom 0.3s; /* Smooth transition for hover effect */
+  border-bottom: 2px solid transparent; /* Add invisible bottom border initially */
+}
+
+.nav-item a:hover {
+  color: #00F7EA; /* Change link color on hover */
+  border-bottom: 2px solid #00F7EA; /* Highlight bottom border on hover */
+}
+
+
+/* Fixed Navigation Bar */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+  z-index: 1000; /* Ensures the nav bar is above other elements */
+}
+
+.fixed-nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.fixed-nav .nav-item a {
+  text-decoration: none;
+  color: grey; /* Default color */
+  font-size: 24px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.fixed-nav .nav-item a.active {
+  color: black; /* Active section color */
+  font-weight: bold; /* Optional: Bold font */
+  border-bottom: 2px solid black; /* Underline effect */
+}
+
+.fixed-nav .nav-item a:hover {
+  color: #00F7EA;
+}
+
+
+
+
+
+
+
+
+.about-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-evenly; /* Center items vertically */
+  text-align: center;
+  padding-top: 40px;
+}
+
+.about-container h1 {
+  font-size: 48px;
+}
+
+.about-container h2 {
+  font-size: 40px;
+}
+
+.about-container h1, h2 {
+  color: #1737A0; /* Set h1 color to #1737A0 */
+}
+
+.about-container p {
+  font-size: 24px; /* Default font size */
+  white-space: normal; /* Allow text to wrap naturally */
+  line-height: 1.5;
+}
+
+.about-us {
+  width: 80%; /* Optional: Control the width of the section */
+}
+
+.what-we-do, .our-approach {
+  width: 80%; /* Optional: Control the width of the section */
+}
+
+.our-approach-image-container {
+  display: flex; /* Use flexbox to align images horizontally */
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Center the images horizontally */
+  gap: 50px; /* Add space between images relative to the viewport width */
+}
+
+.our-approach-image-container img {
+  width: 200px; /* Width relative to viewport width */
+  height: auto; /* Maintain the aspect ratio */
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}
+
+.image-item {
+  display: flex; /* or inline-flex */
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-item h3 {
+  font-size: 30px; /* Font size relative to the viewport width */
+  text-align: center; /* Center-align the text */
+  color: #333; /* Optional: Set a dark gray color for the text */
+}
+
+
+
+
+
+
+.frontpage {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.science-container {
+  display: flex; /* Enable flexbox */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; /* Align items vertically in the center */
+  width: 100%;
+  gap: 30px;
+  margin-top: 80px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+
+  background-image: linear-gradient(to top, #010007, #1737A0, #1737A0,#1737A0, #00F7EA, white);
+}
+
+.article-container {
+  width: 500px;
+  height: 700px;
+  overflow: hidden;
+  flex-flow: column wrap;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: #f8f8f8; /* Optional: Set a background color */
+  text-align: left; /* Center the text inside each component */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.article-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  transform: scale(1.03); /* Slightly expand the container */
+}
+
+
+.article-container img {
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
+  object-fit: cover; /* Crop or scale image to maintain aspect ratio */
+  overflow: hidden;
+}
+
+.article-title {
+  width: 100%;
+  height: 10%;
+  font-size: 12px;
+  transition: text-decoration 0.3s ease; /* Smooth underline effect */
+}
+
+.article-container:hover .article-title h1 {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.journal-date {
+  width: 500px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 20px
+}
+
+.journal {
+  padding-right: 10px;
+  border-right: 1.5px solid black;
+}
+
+
+
+
+
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px; /* Space between grid items */
+  padding-top: 80px; /* Padding around the grid */
+  width: 100%;
+}
+
+.team-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+.team-card {
+  display: flex;
+  width: 550px;
+  height: 250px;
+  align-items: flex-start;
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-img {
+  width: 250px; /* Circular image size relative to screen */
+  height: 250px;
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures image doesn't overflow the border */
+  margin-right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the circle */
+}
+
+.team-img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  transform: scale(1.03); /* Slightly expand the container */
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 10px;
+}
+
+.team-info h1 {
+  margin: 0;
+  font-size: 40px;
+  padding-top: 10px;
+  color: #1737A0; /* Dark text */
+}
+
+.team-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.team-role {
+  width: 100%;
+  font-size: 24px;
+  color: black;
+  margin: 0 0;
+  font-weight: bold;
+}
+
+.team-description {
+  width: 100%;
+  font-size: 20px;
+  color: black;
+  margin: 0 0;
+}
+
+
+.team-socials img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.team-socials img:hover {
+  transform: scale(1.1); /* Hover effect */
+}
+
+.careers-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Align content to the left */
+  justify-content: center; /* Align content to the top */
+  margin-top: 60px;
+  text-align: left; /* Ensure text is aligned to the left */
+  height: 70vh;
+
+  background-image: url('./images/career_background2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.careers-container h1 {
+  margin: 0 0 0 0; /* Add margin below the heading */
+  font-size: 48px; /* Adjust font size for responsiveness */
+  color: white; /* Optional: Heading color */
+  text-shadow: 7px 7px  #000000;
+  padding-bottom: 2vw;
+}
+
+.careers-container button {
+  width: 500px;
+  height: 80px;
+  padding: 8px;
+  font-size: 24px; /* Responsive font size */
+  background-color: #00F7EA; /* Green background */
+  color: #010007; /* White text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.careers-container button:hover {
+  background-color: #1737A0;
+  font-weight: bold;
+  color: white;
+}
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  gap: 20px;
+}
+
+.contact-container h1 {
+  font-size: 40px;
+  margin: 0
+}
+.contact-container p {
+  font-size: 20px;
+  margin: 0
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  font-size: 24px;
+  border-width: 1.5px;
+  border-color: black;
+}
+textarea {
+  resize: vertical; /* Allows resizing only vertically */
+  width: 100%; /* Set a fixed width or a relative width */
+  height: 400px;
+}
+
+.button-container button {
+  width: 60%;
+  height: 60px;
+  font-size: 26px;
+  color: white;
+  background-color: #010007;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 0;
+  border: none;
+}
+
+.button-container button:hover {
+  font-weight: bold;
+  background-color: #1737A0;  
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center align the content horizontally */
+  justify-content: space-between;
+  background-image: url('./images/footer.jpg'); /* Path to the image */
+  background-size: cover; /* Ensures the image covers the container */
+  width: 100vw;
+  height: 50vh;
+}
+
+.footer-logo img {
+  padding-left: 40px;
+  width: 300px; /* Adjust the width of the logo relative to viewport width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.footer-link-wrapper {
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer-link-wrapper img {
+  width: 60px; 
+  height: auto;
+}
+
+.footer-link {
+  font-size: 24px; /* Responsive font size for the link */
+  text-decoration: none; /* Remove underline from the link */
+  color: white; /* Optional: Dark text color */
+  transition: color 0.2s; /* Add hover effect for interactivity */
+}
+
+.footer-link:hover {
+  color: #00F7EA; /* Change link color on hover */
+}
+
+
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/Inter\,Monoton/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype'); /* Adjust the file path as needed */
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
 }
