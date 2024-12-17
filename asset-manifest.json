@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/m31-web/static/css/main.4523b53c.css",
+    "main.css": "/m31-web/static/css/main.242b559c.css",
     "main.js": "/m31-web/static/js/main.abdfa498.js",
     "static/js/453.a5709a78.chunk.js": "/m31-web/static/js/453.a5709a78.chunk.js",
     "static/media/landingpage2.mp4": "/m31-web/static/media/landingpage2.ddc5a2e0f773c293ff06.mp4",
@@ -20,12 +20,12 @@
     "static/media/imaging.png": "/m31-web/static/media/imaging.d3ae18ec2a84a06811ad.png",
     "static/media/linkedin_logo.png": "/m31-web/static/media/linkedin_logo.68ac41e1459436bfd38f.png",
     "index.html": "/m31-web/index.html",
-    "main.4523b53c.css.map": "/m31-web/static/css/main.4523b53c.css.map",
+    "main.242b559c.css.map": "/m31-web/static/css/main.242b559c.css.map",
     "main.abdfa498.js.map": "/m31-web/static/js/main.abdfa498.js.map",
     "453.a5709a78.chunk.js.map": "/m31-web/static/js/453.a5709a78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4523b53c.css",
+    "static/css/main.242b559c.css",
     "static/js/main.abdfa498.js"
   ]
 }
